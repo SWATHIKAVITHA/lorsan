@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en"><!-- Basic -->
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+     <!-- Site Metas -->
+     <title>Lorsan Training</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">    
+	<!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css">    
+	<link rel="stylesheet" href="css/styles.css">    
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <style>
+        label{
+            font-weight: bold;
+            font-size: large;
+        }
+        .title {
+        margin-top: 20px; /* Adjusts space above the title */
+        color: #4a90e2; /* Change this to your desired color */
+        font-size: 32px; /* Adjust the font size if needed */
+        text-align: center; 
+        font-weight: bold;/* Centers the title */
+    }
+    .image-gallery {
+        border: 2px solid #4a90e2; /* Border color and thickness */
+        border-radius: 15px; /* Rounded corners */
+        padding: 20px; /* Space inside the box */
+        background-color: #f9f9f9; /* Optional: background color */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow for depth */
+        margin-bottom: 20px; /* Space below the gallery */
+    }
+    .navbar-nav .nav-item {
+        margin: 0 10px; /* Adjust spacing to reduce width */
+        white-space: nowrap; /* Prevent wrapping */
+    }
+    
+    label{
+        font-weight: bold;
+        font-size: large;
+    }
+    </style>
+    <style>
+        /* Custom styles for the container */
+         /* .resort-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 80vh; */
+            /* background-image: url('images/about-img.jpg'); Replace with an appropriate background image URL */
+           /* background-size: cover;
+            background-position: center;
+        }   */
+        .resort-container {
+        background-image: url('https://example.com/path/to/image.jpg'); /* Correct path */
+        background-size: cover;
+        background-position: center;
+        height: 100vh; /* Set a height to see the background */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        .resort-card {
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for better readability */
+          border-radius: 8px;
+            padding: 20px;
+            margin: 15px;
+            max-width: 400px;
+            text-align: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        } 
+        .resort-card h3 {
+            font-weight: bold;
+            color: #333;
+        }
+    
+        .resort-card p {
+            color: #666;
+        }
+        .enquire-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    }
+    .title {
+        margin-top: 30px; /* Adjusts space above the title */
+        color: #4a90e2; /* Change this to your desired color */
+        font-size: 32px; /* Adjust the font size if needed */
+        text-align: center; 
+        font-weight: bold;/* Centers the title */
+    }
+    body {
+        background-image: url('images/5968949.jpg'); /* Image path */
+        background-size: cover; /* Cover the whole page */
+        background-position: center center; /* Center the image */
+        background-attachment: fixed; /* Keep the background fixed during scrolling */
+        height: 100vh; /* Make the body take the full viewport height */
+        margin: 0; /* Remove default margin */
+        color: black; /* Text color to stand out on background */
+    }
+    </style>
+    <style>
+        .title {
+        margin-top: 20px; /* Adjusts space above the title */
+        color: black; /* Change this to your desired color */
+        font-size: 32px; /* Adjust the font size if needed */
+       
+        font-weight: bold;/* Centers the title */
+    }
+    .image-gallery {
+        border: 2px solid #d4a81e; /* Border color and thickness */
+        border-radius: 15px; /* Rounded corners */
+        padding: 20px; /* Space inside the box */
+        background-color: #f9f9f9; /* Optional: background color */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow for depth */
+        margin-bottom: 20px; /* Space below the gallery */
+    }
+    .navbar-nav .nav-item {
+        margin: 0 10px; /* Adjust spacing to reduce width */
+        white-space: nowrap; /* Prevent wrapping */
+    }
+    
+    body {
+        background-image: url('images/5968949.jpg'); /* Image path */
+        background-size: cover; /* Cover the whole page */
+        background-position: center center; /* Center the image */
+        background-attachment: fixed; /* Keep the background fixed during scrolling */
+        height: 100vh; /* Make the body take the full viewport height */
+        margin: 0; /* Remove default margin */
+        color: black; /* Text color to stand out on background */
+    }
+    /* Default styles for larger screens */
+.resort-container {
+    background-image: url('https://example.com/path/to/image.jpg'); /* Correct path */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    margin-top: 30px;
+    color: #4a90e2;
+    font-size: 32px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Contact Section */
+.container-xxl {
+    padding: 50px 0;
+}
+
+@media (max-width: 1200px) {
+    .col-md-6 {
+        margin-bottom: 20px; /* Space between map and form */
+    }
+}
+
+/* For screens smaller than 768px (mobile devices) */
+@media (max-width: 768px) {
+    .title {
+        font-size: 24px; /* Adjust font size for smaller screens */
+    }
+
+    .col-md-6 iframe {
+        width: 100%;
+        height: 250px; /* Adjust map height */
+    }
+
+    /* Stack form and map vertically */
+    .col-md-6 {
+        width: 100%;
+        margin-bottom: 20px; /* Space between map and form */
+    }
+
+    .navbar-nav .nav-item {
+        margin: 0 5px; /* Adjust spacing for mobile */
+    }
+
+    /* Adjust the contact form elements */
+    .form-group label {
+        font-size: 12px; /* Smaller label font size for mobile */
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 14px; /* Adjust font size for inputs */
+    }
+
+    .btn-primary {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
+
+/* For screens smaller than 480px (extra small devices) */
+@media (max-width: 480px) {
+    .col-md-6 iframe {
+        height: 200px; /* Further reduce map height */
+    }
+
+    .col-md-6 {
+        width: 100%;
+    }
+
+    .title {
+        font-size: 20px; /* Even smaller title font */
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 12px; /* Further reduce input font size */
+    }
+
+    .btn-primary {
+        font-size: 12px;
+    }
+}
+
+    </style>
+</head>
+
+<body>
+	<!-- Start header -->
+	<header class="top-navbar">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container">
+				<a class="navbar-brand" href="index.html">
+					<img src="images/images/Lorsan Logo.png" alt="" style="height: 50px;"/>
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-rs-food" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbars-rs-food">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item "><a class="nav-link" href="index.html">HOME</a></li>
+						<li class="nav-item"><a class="nav-link" href="aboutus.html">ABOUT US</a></li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">SERVICES</a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="corporatetraining.html">CORPORATE TRAINING</a>
+								<a class="dropdown-item" href="personalcoaching.html">PERSONAL COACHING</a>
+								<!-- <div class="dropdown-submenu">
+									<ul>
+										<li><a class="dropdown-item" href="business-body-language.html">Business Body Language</a></li>
+										<li><a class="dropdown-item" href="brain-performance.html">Brain Performance Coaching</a></li>
+									</ul>
+								</div> -->
+								  
+								<a class="dropdown-item" href="geneticbrainprofiling.html">GENETIC BRAIN PROFILING</a>
+							</div>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="media.html">MEDIA</a></li>
+						<li class="nav-item"><a class="nav-link" href="contactus.html">CONTACT US</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- End header -->
+
+    <div id="spinner" class="spinner-border text-primary" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>
+<!-- <h1><centre>Contact US</centre></h1> -->
+   <center><div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="container my-5">
+                    <h1 style="text-align: center;">Contact Us</h1>
+                </div>
+                <div class="col-md-6">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d7784.408282387196!2d77.816406!3d12.700095!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTLCsDQyJzAwLjMiTiA3N8KwNDknMDguMyJF!5e0!3m2!1sen!2sin!4v1732195646545!5m2!1sen!2sin" width="350" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-md-6">
+                    <form id="contactForm" class="needs-validation"  novalidate onsubmit="sendToWhatsApp(event)">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" class="form-control" id="name" required aria-label="Name">
+                            <div class="invalid-feedback">Please enter your name.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" required aria-label="Email">
+                            <div class="invalid-feedback">Please enter a valid email address.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" class="form-control" id="phone" required aria-label="Phone Number">
+                            <div class="invalid-feedback">Please enter your phone number.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea class="form-control" id="message" rows="4" required aria-label="Message"></textarea>
+                            <div class="invalid-feedback">Please enter your message.</div>
+                        </div>
+                        <div class="col-12 text-center">
+                            <button type="submit" class="btn btn-primary mt-3">Send Now</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script>
+        window.onload = function() {
+            document.getElementById('spinner').style.display = 'none';
+        };
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                var forms = document.getElementsByClassName('needs-validation');
+                Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script> -->
+   
+   <script>
+    function sendToWhatsApp(event) {
+        event.preventDefault();
+
+        // Retrieve form values
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const phone = document.getElementById("phone").value;
+        const message = document.getElementById("message").value;
+
+        // WhatsApp contact number
+        const whatsappNumber = "919994644995";
+
+        // Compose message with form data
+        const whatsappMessage = `Hello, I'm ${name}. My email is ${email}, and my phone number is ${phone}. Message: ${message}`;
+
+        // WhatsApp URL with prefilled message
+        const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+
+        // Open WhatsApp (web or app, based on the device)
+        window.open(whatsappURL, "_blank");
+    }
+</script>
+
+<!-- ends -->
+	
+ </center>
+	<!-- Start Footer -->
+	<footer class="footer-area bg-f">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-9 col-md-6">
+					<h3>For Reservation</h3>
+					<p class="lead"><span style="color: #3498db;"> Visit Us: </span> NO.2, Gopi Garden (Behind Titan Watches), Hosur - 635 126, Tamil Nadu.</p>
+					<p class="lead"><a href="#"><span style="color: #3498db;"> Call Us: </span>+91 9786224994</a></p>
+					
+					<p><a href="#"><span style="color: #3498db;">Mail Us: </span> lorsantraining@gmail.com</a></p>
+					
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<h3>Quick Links</h3>
+					<p><span class="text-color"><a href="">Home</a></span></p>
+					<p><span class="text-color"><a href="">About Us</a></span></p>
+					<p><span class="text-color"><a href="">Services</a></span></p>
+					<p><span class="text-color"><a href="">Media</a></span></p>
+					<p><span class="text-color"><a href="">Contact Us</a></span></p>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<ul class="list-inline f-social">
+						<li class="list-inline-item"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div class="copyright">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<p class="company-name">
+							All Rights Reserved. &copy; <span id="currentYear"></span> 
+							<a href="#">Lorsan Training</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</footer>
+	<!-- End Footer -->
+	
+	<a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>
+
+	<!-- ALL JS FILES -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+	
+	<script src="js/jquery.superslides.min.js"></script>
+	<script src="js/images-loded.min.js"></script>
+	<script src="js/isotope.min.js"></script>
+	<script src="js/baguetteBox.min.js"></script>
+	<script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>
+    <script src="js/custom.js"></script>
+	<script>
+		document.getElementById("currentYear").textContent = new Date().getFullYear();
+	</script>
+</body>
+</html>

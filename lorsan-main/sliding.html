@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Lorsan Training</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+        background-color: #3498db;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center; /* Center content horizontally */
+        align-items: center; /* Center content vertically */
+        height: 100vh; /* Ensure body takes up the full viewport height */
+    }
+
+        .sliderr {
+            overflow: hidden;
+            width: 100%;
+            padding: 2em 0;
+            position: relative;
+            background-color: whitesmoke;
+        }
+
+        .slide-track {
+            display: flex;
+            gap: 20px; /* Equal spacing between logos */
+            animation: scroll 20s linear infinite;
+        }
+
+        .slides {
+            width: 150px; /* Uniform width for all logos */
+            height: 100px; /* Uniform height for all logos */
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .slides img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* Prevent distortion */
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sliderr">
+        <div class="slide-track">
+            <!-- Images -->
+            <div class="slides">
+                <img src="images/images/lorsan training client list/anniebesant.png" alt="Client 1">
+            </div>
+            <div class="slides">
+                <img src="images/images/lorsan training client list/gitam.png" alt="Client 2">
+            </div>
+            <div class="slides">
+                <img src="images/images/lorsan training client list/jaiautoindustries.png" alt="Client 3">
+            </div>
+            <div class="slides">
+                <img src="images/images/lorsan training client list/jcilogo.png" alt="Client 4">
+            </div>
+            <div class="slides">
+                <img src="images/images/lorsan training client list/niit.png" alt="Client 5">
+            </div>
+            <div class="slides">
+                <img src="images/images/lorsan training client list/rotatrylogo.png" alt="Client 6">
+            </div>
+            <div class="slides">
+                <img src="images/images/lorsan training client list/sparshhospital logo.png" alt="Client 7">
+            </div>
+            <div class="slides">
+                <img src="images/images/lorsan training client list/tata.png" alt="Client 8">
+            </div>
+            <div class="slides">
+                <img src="images/images/lorsan training client list/unilever.png" alt="Client 9">
+            </div>
+            <div class="slides">
+                <img src="images/images/lorsan training client list/vignan's.png" alt="Client 10">
+            </div>
+            <div class="slides">
+                <img src="images/images/lorsan training client list/wipro.png" alt="Client 11">
+            </div>
+            <div class="slides">
+                <img src="images/images/lorsan training client list/relicell.jfif" alt="Client 12">
+            </div>
+            <!-- Duplicate for smooth scroll -->
+            <div class="slides">
+                <img src="images/images/lorsan training client list/anniebesant.png" alt="Client 1">
+            </div>
+            <div class="slides">
+                <img src="images/images/lorsan training client list/gitam.png" alt="Client 2">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

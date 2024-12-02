@@ -1,0 +1,242 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WhatsApp Enquiry</title>
+  <!-- Add FontAwesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      background-color: transparent;
+    }
+
+    .whatsapp-btn {
+      display: inline-block;
+      padding: 20px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      font-size: 50px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s;
+    }
+
+    .whatsapp-btn:hover {
+      background-color: #128C7E;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- WhatsApp Icon Button -->
+  <a href="https://wa.me/11234567890?text=Hi%2C%20I%20have%20an%20enquiry%20about%20your%20services." target="_blank">
+    <i class="fab fa-whatsapp whatsapp-btn"></i>
+  </a>
+
+</body>
+</html>
+
+<!-- .modal {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0); /* Fully transparent background */
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+  } -->
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Enquiry Modal</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: transparent; /* Transparent background */
+      flex-direction: column;
+      text-align: center;
+    }
+
+    /* Button to open the modal */
+    #openModalBtn {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      z-index: 1001; /* Ensure button is clickable above modal */
+      margin-bottom: 20px;
+    }
+
+    /* WhatsApp Icon Button */
+    .whatsapp-btn {
+      display: inline-block;
+      padding: 15px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      font-size: 32px;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s;
+    }
+
+    .whatsapp-btn:hover {
+      background-color: #128C7E;
+    }
+
+    /* Modal Styles */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0); /* Fully transparent background */
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    /* Modal Content */
+    .modal-content {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      width: 300px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Close Button */
+    .close-btn {
+      font-size: 30px;
+      color: #aaa;
+      cursor: pointer;
+      position: absolute;
+      top: 10px;
+      right: 15px;
+    }
+
+    /* Form Styles */
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    form label {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    form input, form textarea {
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    form textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    form button {
+      padding: 12px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    /* Button Hover Effects */
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+
+
+  <!-- Button to open the modal -->
+  <button id="openModalBtn">Open Enquiry Form</button>
+
+  <!-- Modal Structure -->
+  <div class="modal" id="enquiryModal">
+    <div class="modal-content">
+      <span class="close-btn" id="closeModalBtn">&times;</span>
+      <h2>Enquiry</h2>
+      <form action="#" method="POST">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+        <label for="phone">Your Phone</label>
+        <input type="tel" id="phone" name="phone" placeholder="Your Phone" required>
+
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Leave a message here" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    // Get the modal, button, and close elements
+    const modal = document.getElementById('enquiryModal');
+    const openModalBtn = document.getElementById('openModalBtn');
+    const closeModalBtn = document.getElementById('closeModalBtn');
+
+    // Function to open the modal
+    openModalBtn.onclick = function() {
+      modal.style.display = 'flex';
+      openModalBtn.style.display = 'none';  // Hide the button when modal is open
+    }
+
+    // Function to close the modal
+    closeModalBtn.onclick = function() {
+      modal.style.display = 'none';
+      openModalBtn.style.display = 'inline-block';  // Show the button when modal is closed
+    }
+
+    // Close the modal if the user clicks outside of it
+    window.onclick = function(event) {
+      if (event.target === modal) {
+        modal.style.display = 'none';
+        openModalBtn.style.display = 'inline-block';  // Show the button when modal is closed
+      }
+    }
+  </script>
+
+</body>
+</html>

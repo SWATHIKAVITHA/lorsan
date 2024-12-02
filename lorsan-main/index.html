@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en"><!-- Basic -->
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+     <!-- Site Metas -->
+     <title>Lorsan Training</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">    
+	<!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css">    
+	<link rel="stylesheet" href="css/styles.css">    
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+	
+	
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+      
+    <style>
+        .title {
+        margin-top: 20px; /* Adjusts space above the title */
+        color: black; /* Change this to your desired color */
+        font-size: 32px; /* Adjust the font size if needed */
+        text-align: center; 
+        font-weight: bold;/* Centers the title */
+    }
+    .image-gallery {
+        border: 2px solid #d4a81e; /* Border color and thickness */
+        border-radius: 15px; /* Rounded corners */
+        padding: 20px; /* Space inside the box */
+        background-color: #f9f9f9; /* Optional: background color */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow for depth */
+        margin-bottom: 20px; /* Space below the gallery */
+    }
+    .navbar-nav .nav-item {
+        margin: 0 10px; /* Adjust spacing to reduce width */
+        white-space: nowrap; /* Prevent wrapping */
+    }
+    
+    body {
+        background-image: url('images/5968949.jpg'); /* Image path */
+        background-size: cover; /* Cover the whole page */
+        background-position: center center; /* Center the image */
+        background-attachment: fixed; /* Keep the background fixed during scrolling */
+        height: 100vh; /* Make the body take the full viewport height */
+        margin: 0; /* Remove default margin */
+        color: black; /* Text color to stand out on background */
+    }
+    </style>
+    <style>
+			.textcolour{
+			color: #e0af14;
+			font-size: bold;
+		}
+		
+			p {
+    font-weight: 400;
+    text-align: start; /* Justify the text for equal word spacing */
+    line-height: 1.6; /* Controls spacing between lines of text */
+    padding: 10px; /* Adds equal padding inside the <p> tag */
+    letter-spacing: 0.5px; /* Adds spacing between individual characters */
+    margin: 0; /* Removes default margin */
+}
+		
+        .enquire-section {
+            padding: 20px;
+        }
+    
+        .enquire-container {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+			border: 2px solid black; /* Black border */
+			width: fit-content;     /* Adjust to fit content */
+			transition: border-color 0.3s ease; /* Smooth transition for hover effect */
+        }
+    
+        .enquire-container:hover {
+            transform: translateY(-5px);
+			border-color: #e0af14;
+        }
+    
+        .enquire-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+    
+        .enquire-content {
+            margin-top: 15px;
+            margin-bottom: 15px;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+    
+        .enquire-button {
+            margin-top: 10px;
+        }
+    
+        /* Media queries for responsive design */
+        @media (max-width: 768px) {
+            .enquire-section .col-md-6 {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+    <style>
+		.cover-slides1 {
+			position: relative;
+			height: 100vh; /* Full-screen height */
+			overflow: hidden;
+			background: #000; /* Fallback background */
+		}
+	
+		.cover-slides1 img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover; /* Ensures the image covers the container */
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 1;
+		}
+	
+		.cover-slides1 .overlay-content {
+			position: absolute;
+			top: 50%; /* Centers the text vertically */
+			left: 50%; /* Centers the text horizontally */
+			transform: translate(-50%, -50%); /* Centers text perfectly */
+			color: #fff; /* White text for contrast */
+			z-index: 2; /* Place text above the image */
+			text-align: center; /* Center-align text */
+		}
+	
+		.cover-slides1 h1 {
+			font-size: 3rem; /* Adjust font size */
+			margin-bottom: 1rem;
+			text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Optional: Text shadow for better readability */
+		}
+	
+		.cover-slides1 p {
+			font-size: 1.5rem;
+			margin-bottom: 1.5rem;
+			text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Same shadow for consistency */
+		}
+	
+		.cover-slides1 a.btn {
+			color: #fff;
+			background: #3498db; /* Button background color */
+			padding: 10px 20px;
+			border-radius: 30px;
+			text-decoration: none;
+			transition: all 0.3s ease;
+		}
+	
+		.cover-slides1 a.btn:hover {
+			background: #010101; /* Hover effect */
+		}
+		@media (max-width: 768px) {
+    .cover-slides1 h1 {
+        font-size: 2rem;
+    }
+    .cover-slides1 p {
+        font-size: 1rem;
+    }
+}
+	</style>
+</head>
+
+<body>
+	<header class="top-navbar">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container">
+				<a class="navbar-brand" href="index.html">
+					<img src="images/images/Lorsan Logo.png" alt="" style="height: 50px;"/>
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-rs-food" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbars-rs-food">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item "><a class="nav-link" href="index.html">HOME</a></li>
+						<li class="nav-item"><a class="nav-link" href="aboutus.html">ABOUT US</a></li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">SERVICES</a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="corporatetraining.html">CORPORATE TRAINING</a>
+								<a class="dropdown-item" href="personalcoaching.html">PERSONAL COACHING</a>
+								<a class="dropdown-item" href="geneticbrainprofiling.html">GENETIC BRAIN PROFILING</a>
+							</div>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="media.html">MEDIA</a></li>
+						<li class="nav-item"><a class="nav-link" href="contactus.html">CONTACT US</a></li>
+					</ul>
+			</div>
+		</nav>
+	</header>
+	<!-- End header -->
+
+	<div class="whatsapp-icon">
+		<a href="https://wa.me/+919994644995?text=Hello,%20I%20would%20like%20to%20enquire%20about%20the%20Services%20in%20Lorsan%2Training%20Could%20you%20provide%20more%20details%20on%20available%20Services%20%20the%20process?" target="_blank">
+			<img src="./images/whatsapp-logo.png" alt="WhatsApp Icon">
+		</a>
+	</div>
+
+	
+	<div class="modal" id="enquiryModal">
+		<div class="modal-content">
+			<a onclick="closeModal()" style="text-align: right;cursor: progress;">X</a>
+			<h2>Enquiry</h2>
+		  <form id="contactform" 
+  action="https://formsubmit.co/lorsantraining@gmail.com" 
+  method="POST" 
+  enctype="multipart/form-data"
+  onsubmit="return updateSubject()">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_subject" id="subject" value="Contact Information From Submission">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_next" value="https://yourwebsite.com/thankyou.html">
+
+<div class="row g-3">
+<div class="col-md-6">
+  <div class="form-floating">
+	<label for="name">Your Name</label>
+	<input type="text" name="name" class="form-control" id="name" placeholder="Your Name">
+	<small class="text-danger" id="nameError"></small>
+  </div>
+</div>
+<div class="col-md-6">
+  <div class="form-floating">
+	<label for="phone">Your Phone</label>
+	<input type="text" name="phone" class="form-control" id="phone" placeholder="Your Phone">
+	<small class="text-danger" id="phoneError"></small>
+  </div>
+</div>
+<div class="col-12">
+  <div class="form-floating">
+	<label for="email">Your Email</label>
+	<input type="email" name="email" class="form-control" id="email" placeholder="Your Email">
+	<small class="text-danger" id="emailError"></small>
+  </div>
+</div>
+<div class="col-12">
+  <div class="form-floating">
+	<label for="message">Message</label>
+	<textarea name="message" class="form-control" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
+	<small class="text-danger" id="messageError"></small>
+  </div>
+</div>
+<div class="col-12">
+  <button id="submittBtn" class="btn btn-primary w-100 py-3" type="submit" disabled>Send Message</button>
+</div>
+</div>
+</form>
+
+<script>
+const form = document.getElementById('contactform');
+const fields = ['name', 'email', 'phone', 'message'];
+const submitButton = document.getElementById('submittBtn');
+
+// Validation Patterns
+const patterns = {
+name: /^[a-zA-Z\s]{3,}$/,
+email: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
+phone: /^[0-9]{10}$/,
+message: /.+/
+};
+
+function validateField(field) {
+const input = document.getElementById(field);
+const errorElement = document.getElementById(`${field}Error`);
+if (patterns[field].test(input.value)) {
+  errorElement.textContent = '';
+  return true;
+} else {
+  errorElement.textContent = `Please enter a valid ${field.replace('_', ' ')}.`;
+  return false;
+}
+}
+
+function checkAllFields() {
+let allValid = true;
+fields.forEach((field) => {
+  const valid = validateField(field);
+  if (!valid) allValid = false;
+});
+submitButton.disabled = !allValid;
+}
+
+fields.forEach((field) => {
+const input = document.getElementById(field);
+input.addEventListener('input', () => {
+  validateField(field);
+  checkAllFields();
+});
+});
+
+function updateSubject() {
+const name = document.getElementById('name').value.trim();
+const subjectField = document.getElementById('subject');
+if (name) {
+  subjectField.value = `New Contact Information From ${name}`;
+}
+return checkAllFields();
+}
+</script>
+</div>
+</div>
+
+<script>
+  function showModal() {
+	document.getElementById('enquiryModal').style.display = 'flex';
+  }
+
+  function closeModal() {
+	document.getElementById('enquiryModal').style.display = 'none';
+  }
+</script>
+	
+	<!-- Start slides -->
+	<div id="slides" class="cover-slides">
+		<ul class="slides-container">
+			<li class="text-center">
+				<img src="images/bann.jpg" alt="">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<h1 class="m-b-20" style="text-align: start;"><strong>Corporate Trainings</strong></h1>
+							<p class="m-b-40">Enhance Communication and Interpersonal Skills, Build Confidence, Foster Emotional Intelligence</p>
+							<p><a class="btn btn-lg btn-circle btn-primary" onclick="showModal()">enquire</a></p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="text-center">
+				<img src="images/banner.jpg" alt="">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<h1 class="m-b-20" style="text-align: start;"><strong>Personal Coaching</strong></h1>
+							<p class="m-b-40">Enhance Communication and Interpersonal Skills, Build Confidence, Foster Emotional Intelligence</p>
+							<p><a class="btn btn-lg btn-circle btn-primary" onclick="showModal()">enquire</a></p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="text-center">
+				<img src="images/banner.jpg" alt="">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<h1 class="m-b-20" style="text-align: start;"><strong>Genetic Brain Profiling</strong></h1>
+							<p class="m-b-40">Enhance Communication and Interpersonal Skills, Build Confidence, Foster Emotional Intelligence</p>
+							<p><a class="btn btn-lg btn-circle btn-primary" onclick="showModal()">enquire</a></p>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<!-- End slides -->
+	<!-- end slides -->
+
+	
+	 
+    <!-- End Banner -->
+
+	<!-- Start About -->
+     <br>
+     <br>
+	<div class="about-section-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<img style="border: 3px solid black;"src="images/aboutus (2).jpg" alt="" class="img-fluid">
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12 text-center">
+					<div class="inner-column">
+						<h1><strong> About Us</strong></h1>
+						<p>LORSAN TRAINING CO. is a specialized training company for School / College Facilitators, College Students, Manufacturing & Service Industry. Established by a group of professionals with industrial and service industry knowledge. Meticulous research has been done to offer spring board options for a promising career to the young generation of today. LORSAN provides Trainings in skill development, competency enhancement & life improving career opportunities through quality input at an affordable price. Its wings are spread across pan India. We operate under 3 verticals i.e., Skills Development, Training Concepts and Consultancy.<br><br>
+                            
+                           </p>
+						   
+						<a class="btn btn-primary" style="background-color: #663399; color: #FFFFFF;" href="aboutus.html">Read More</a>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- Services page start -->
+   
+
+<div class="cottages-wrapper">
+	<section class="cottages-section">
+		<h1><strong>SERVICES</strong></h1>
+	   <div class="cottages-container">
+			<div class="cottage-card">
+				<img src="images/corporate-trainer.jpg" alt="Corporate Training">
+				<h3><strong>Corporate Training</strong></h3>
+				<p>
+				<b>Corporate training enhances employees' skills, knowledge, and performance to boost workplace productivity. It covers areas like leadership, communication, conflict resolution, and technical expertise. Tailored to business needs, it aims to improve morale, foster continuous learning, and support organizational growth.</b></p>
+				<button><a href="corporatetraining.html" style="text-decoration: none;color: white;"> <strong>Know More</strong></button>
+				</div>
+				<div class="cottage-card">
+					<img src="images/personaldevelopment.jpg" alt="Personal Coaching">
+					<h3><strong>Personal Training</strong></h3>
+					<p><b>Personal coaching is a one-on-one process that helps individuals achieve goals, improve self-awareness, and overcome challenges. It focuses on structured goal-setting, leveraging strengths, and fostering mindset shifts. This approach promotes personal growth, builds confidence, and supports success in various aspects of life.</b></p>
+					<button><a href="personalcoaching.html" style="text-decoration: none;color: white;"> <strong>Know More</strong></button>
+					</div>
+					<div class="cottage-card">
+						<img src="images/geneticbrainprofiling.png" alt="Genetic Brain Profiling">
+						<h3><strong>Genetic Brain Profiling </strong></h3>
+						<p><b>Genetic Brain Profiling is a scientifically proven method to understand one’s innate abilities, challenges. It throughs light on each person’s inborn abilities. After two years anyone can avail this opportunity to have a clear pathway for their education, career, business preference and recruit employees for their business.
+						</b></p>
+						<button><a href="geneticbrainprofiling.html" style="text-decoration: none;color: rgb(255, 255, 255);"><strong>Know More</strong></button>
+						</div>
+				</div>
+			</section>	
+	</div>
+   
+</div>    
+
+
+<br>
+
+<h2 class="text-center mb-5"><strong>Explore our<span> CLIENTS </span>Says</strong></h2>
+<!-- client list --><div>
+<iframe src="sliding.html" width="100%" height="310px" style="border:none;"></iframe></div>
+ <!-- section -->
+
+
+ <br>
+	
+ <h2 class="text-center mb-5"><strong>TESTIMONIALS</strong></h2>
+ <div class="container testimonial-section">
+
+
+	<div class="row">
+	  <!-- Column 1 -->
+	  <div class="col-md-6">
+		
+		<!-- Review 1 -->
+		<div class="testimonial">
+		  <p>"The leadership training program transformed my management style. I now lead my team with more confidence and clarity."</p>
+		  <div class="reviewer">- John Harris, Senior Manager</div>
+		</div>
+  
+		<!-- Review 2 -->
+		<div class="testimonial">
+		  <p>"The personal development workshop helped me enhance my time management and communication skills. I feel more productive at work!"</p>
+		  <div class="reviewer">- Maria Stewart, Project Coordinator</div>
+		</div>
+  
+		<!-- Review 3 -->
+		<div class="testimonial">
+		  <p>"The team-building training was invaluable. We now collaborate more effectively and the work environment has improved drastically."</p>
+		  <div class="reviewer">- David Clark, HR Director</div>
+		</div>
+  
+	  </div>
+  
+	  <!-- Column 2 -->
+	  <div class="col-md-6">
+		
+		<!-- Review 4 -->
+		<div class="testimonial">
+		  <p>"The customer service excellence training has completely changed the way our staff interacts with clients. We're receiving better feedback than ever before."</p>
+		  <div class="reviewer">- Anna Robinson, Customer Service Manager</div>
+		</div>
+  
+		<!-- Review 5 -->
+		<div class="testimonial">
+		  <p>"The personal growth seminar taught me to take on new challenges with a positive mindset. It has significantly boosted my career." </p>
+		  <div class="reviewer">- Luke Taylor, Sales Executive</div>
+		</div>
+  
+		<!-- Review 6 -->
+		<div class="testimonial">
+		  <p>"The professional development program helped me gain a better understanding of my strengths and how to use them to advance in my career."</p>
+		  <div class="reviewer">- Elizabeth Scott, Marketing Specialist</div>
+		</div>
+  
+	  </div>
+	</div>
+  
+
+  </div>
+  <br>
+	<!-- Start Footer -->
+	<footer class="footer-area bg-f">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-9 col-md-6">
+					<h3>For Reservation</h3>
+					<p class="lead"><span style="color: #3498db;"> Visit Us: </span> NO.2, Gopi Garden (Behind Titan Watches), Hosur - 635 126, Tamil Nadu.</p>
+					<p class="lead"><a href="#"><span style="color: #3498db;"> Call Us: </span>+91 9786224994</a></p>
+					<p class="lead"><a href="#"><span style="color: #3498db;">Mail Us: </span> lorsantraining@gmail.com</a></p>
+					
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<h3>Quick Links</h3>
+					<p><span class="text-color"><a href="index.html">Home</a></span></p>
+					<p><span class="text-color"><a href="aboutus.html">About Us</a></span></p>
+					<p><span class="text-color"><a href="corporatetraining.html">Services</a></span></p>
+					<p><span class="text-color"><a href="media.html">Media</a></span></p>
+					<p><span class="text-color"><a href="contactus.html">Contact Us</a></span></p>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<ul class="list-inline f-social">
+						<li class="list-inline-item"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div class="copyright">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<p class="company-name">
+							All Rights Reserved. &copy; <span id="currentYear"></span> 
+							<a href="#">Lorsan Training</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</footer>
+	<!-- End Footer -->
+
+	<a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>
+
+	<!-- ALL JS FILES -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+	
+	<script src="js/jquery.superslides.min.js"></script>
+	<script src="js/images-loded.min.js"></script>
+	<script src="js/isotope.min.js"></script>
+	<script src="js/baguetteBox.min.js"></script>
+	<script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>
+    <script src="js/custom.js"></script>
+	<script>
+		document.getElementById("currentYear").textContent = new Date().getFullYear();
+	</script>
+</body>
+</html>

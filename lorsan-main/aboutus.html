@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en"><!-- Basic -->
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+     <!-- Site Metas -->
+     <title>Lorsan Training</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">    
+	<!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css">    
+	<link rel="stylesheet" href="css/styles.css">    
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+       <!-- div css -->
+       <style>
+        /* Hover effects for the div */
+.custom-div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 12px 18px rgba(0, 0, 0, 0.2);
+    border-color: #e0af14;
+}
+
+.custom-div h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: #000;
+}
+
+.custom-div p {
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+    color: #555;
+}
+ul{
+    font-weight: 500;
+    text-align: center;
+}
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .custom-div {
+        flex: 1 1 calc(50% - 20px); /* Two items in a row */
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 576px) {
+    .custom-div {
+        flex: 1 1 calc(100% - 20px); /* One item in a row */
+        max-width: calc(100% - 20px);
+    }
+}
+
+
+     </style>
+
+<!-- /* div css ends */ -->
+	<style>
+	.numbered-list {
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Remove list padding */
+  margin: 0; /* Remove extra margins */
+  counter-reset: item; /* Initialize counter */
+}
+
+.numbered-list li {
+  display: flex; /* Align number and text on the same line */
+  align-items: flex-start; /* Vertically align number and text */
+  margin-bottom: 10px; /* Space between list items */
+  text-align: right; /* Align the text to the right */
+}
+
+.numbered-list li::before {
+  
+  display: inline-block; /* Treat number as a block for alignment */
+  width: 30px; /* Adjust width for proper alignment */
+  text-align: right; /* Right-align the numbers */
+  margin-right: 10px; /* Space between number and text */
+  color: #e0af14; /* Number color */
+  font-weight: bold; /* Bold the number for emphasis */
+}
+
+.numbered-list li p {
+  text-align: justify; /* Ensure the text is justified */
+  margin: 0; /* Remove extra margins from paragraphs */
+}
+
+@media (max-width: 768px) {
+  .numbered-list li {
+    flex-direction: column; /* Stack the numbers and text on top of each other on smaller screens */
+    align-items: flex-start; /* Align them to the left */
+    text-align: left; /* Align text to the left for mobile */
+  }
+
+  .numbered-list li::before {
+	
+    margin-right: 0; /* Remove the margin on the right side */
+    margin-bottom: 5px; /* Add some space between the number and text */
+    width: auto; /* Let the number width adjust dynamically */
+    font-size: 18px; /* Slightly smaller font size for mobile */
+  }
+}
+
+	</style>
+    <style>
+        .title {
+        margin-top: 20px; /* Adjusts space above the title */
+        color: black; /* Change this to your desired color */
+        font-size: 32px; /* Adjust the font size if needed */
+        text-align: center; 
+        font-weight: bold;/* Centers the title */
+    }
+    .image-gallery {
+        border: 2px solid #d4a81e; /* Border color and thickness */
+        border-radius: 15px; /* Rounded corners */
+        padding: 20px; /* Space inside the box */
+        background-color: #f9f9f9; /* Optional: background color */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow for depth */
+        margin-bottom: 20px; /* Space below the gallery */
+    }
+    .navbar-nav .nav-item {
+        margin: 0 10px; /* Adjust spacing to reduce width */
+        white-space: nowrap; /* Prevent wrapping */
+    }
+    
+    body {
+        background-image: url('images/5968949.jpg'); /* Image path */
+        background-size: cover; /* Cover the whole page */
+        background-position: center center; /* Center the image */
+        background-attachment: fixed; /* Keep the background fixed during scrolling */
+        height: 100vh; /* Make the body take the full viewport height */
+        margin: 0; /* Remove default margin */
+        color: black; /* Text color to stand out on background */
+    }
+    </style>
+    <style>
+			.textcolour{
+			color: #e0af14;
+			font-size: bold;
+		}
+		
+			p {
+    font-weight: 400;
+    text-align: justify; /* Justify the text for equal word spacing */
+    line-height: 1.6; /* Controls spacing between lines of text */
+    padding: 10px; /* Adds equal padding inside the <p> tag */
+    letter-spacing: 0.5px; /* Adds spacing between individual characters */
+    margin: 0; /* Removes default margin */
+}
+		
+        .enquire-section {
+            padding: 20px;
+        }
+    
+        .enquire-container {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+			border: 2px solid black; /* Black border */
+			width: fit-content;     /* Adjust to fit content */
+			transition: border-color 0.3s ease; /* Smooth transition for hover effect */
+        }
+    
+        .enquire-container:hover {
+            transform: translateY(-5px);
+			border-color: #e0af14;
+        }
+    
+        .enquire-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+    
+        .enquire-content {
+            margin-top: 15px;
+            margin-bottom: 15px;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+    
+        .enquire-button {
+            margin-top: 10px;
+        }
+    
+        /* Media queries for responsive design */
+        @media (max-width: 768px) {
+            .enquire-section .col-md-6 {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+    <style>
+		.cover-slides1 {
+			position: relative;
+			height: 100vh; /* Full-screen height */
+			overflow: hidden;
+			background: #000; /* Fallback background */
+		}
+	
+		.cover-slides1 img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover; /* Ensures the image covers the container */
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 1;
+		}
+	
+		.cover-slides1 .overlay-content {
+			position: absolute;
+			top: 50%; /* Centers the text vertically */
+			left: 50%; /* Centers the text horizontally */
+			transform: translate(-50%, -50%); /* Centers text perfectly */
+			color: #fff; /* White text for contrast */
+			z-index: 2; /* Place text above the image */
+			text-align: center; /* Center-align text */
+		}
+	
+		.cover-slides1 h1 {
+			font-size: 3rem; /* Adjust font size */
+			margin-bottom: 1rem;
+			text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Optional: Text shadow for better readability */
+		}
+	
+		.cover-slides1 p {
+			font-size: 1.5rem;
+			margin-bottom: 1.5rem;
+			text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Same shadow for consistency */
+		}
+	
+		.cover-slides1 a.btn {
+			color: #fff;
+			background: #3498db; /* Button background color */
+			padding: 10px 20px;
+			border-radius: 30px;
+			text-decoration: none;
+			transition: all 0.3s ease;
+		}
+	
+		.cover-slides1 a.btn:hover {
+			background: #010101; /* Hover effect */
+		}
+		@media (max-width: 768px) {
+    .cover-slides1 h1 {
+        font-size: 2rem;
+    }
+    .cover-slides1 p {
+        font-size: 1rem;
+    }
+}
+	</style>
+</head>
+
+<body>
+	<!-- Start header -->
+	<header class="top-navbar">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container">
+				<a class="navbar-brand" href="index.html">
+					<img src="images/images/Lorsan Logo.png" alt="" style="height: 50px;"/>
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-rs-food" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbars-rs-food">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item "><a class="nav-link" href="index.html">HOME</a></li>
+						<li class="nav-item"><a class="nav-link" href="aboutus.html">ABOUT US</a></li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">SERVICES</a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="corporatetraining.html">CORPORATE TRAINING</a>
+								<a class="dropdown-item" href="personalcoaching.html">PERSONAL COACHING</a>
+								<!-- <div class="dropdown-submenu">
+									<ul>
+										<li><a class="dropdown-item" href="business-body-language.html">Business Body Language</a></li>
+										<li><a class="dropdown-item" href="brain-performance.html">Brain Performance Coaching</a></li>
+									</ul>
+								</div> -->
+								  
+								<a class="dropdown-item" href="geneticbrainprofiling.html">GENETIC BRAIN PROFILING</a>
+							</div>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="media.html">MEDIA</a></li>
+						<li class="nav-item"><a class="nav-link" href="contactus.html">CONTACT US</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- End header -->
+	<!-- <div class="about-section-box"> -->
+		<!-- <div class="container">
+			<div class="row">
+				<div class="container my-5">
+                    <h2 class="title">ABOUT US</h2><br><br>
+                    <div class="col-md-6">
+                        <div class="full float-right_img">
+                            <img src="images/images/aboutpage.avif" alt="#" />
+                        </div>
+                    </div> -->
+
+
+
+
+                    
+				<!-- </div>
+			</div>
+		</div>  -->
+	<!-- </div> -->
+    <!-- <div class="cover-slides1">
+		<img src="images/banner_img.png" alt="Banner Image">
+		<div class="overlay-content">
+			<h1>Welcome to Lorsan Training</h1>
+			<p>Empowering you with knowledge and skills for a better future</p>
+			<a href="#" class="btn">Learn More</a>
+		</div>
+	</div> -->
+	<!-- end slides -->
+
+	
+	 
+    <!-- End Banner -->
+
+	<!-- Start About -->
+     <br>
+     <br>
+	<div class="about-section-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<img style="border: 3px solid black;"src="images/mainaboutus.jpg" alt="" class="img-fluid">
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12 text-center">
+					<div class="inner-column">
+						<h1><strong>LORSAN Training Concepts</strong></h1>
+						<p style="text-align:start;">LORSAN TRAINING CO. is a specialized training company for School / College Facilitators, College Students, Manufacturing & Service Industry. Established by a group of professionals with industrial and service industry knowledge. Trainings in skill development, competency enhancement & life improving career opportunities through quality input at an affordable price.LORSAN has developed result-oriented training modules using both scientific and interactive methodologies to ensure a good return on investment, which we are very glad to offer to your esteemed organization.<br><br>
+                            
+                           </p>
+						<!-- <a class="btn btn-lg btn-circle btn-outline-new-white" href="aboutus.html">Read More</a> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <div class="container enquire-section">
+        <div class="row">
+            <!-- First Enquire Container -->
+             <div class="col-md-6">
+                <div class="enquire-container">
+                    <center><h2 class="textcolour"><strong>The benefits of training can be summed up:</strong></h2></center>
+                    <div class="enquire-content">
+                     <p>  <ul class="numbered-list">
+                            <li>1.Improves morale of students/employees</li>
+                            <li>2.Increases job opportunities</li>
+                            <li>3.Improved employability skills</li>
+                         
+                        </ul></p> 
+                       
+                    </div>
+                    <!-- <button class="btn btn-primary enquire-button">Enquire Now</button> -->
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="enquire-container">
+                  
+                    <div class="enquire-content">
+                        <center><h2 class="textcolour"><strong>Training solutions for you.</strong></h2></center>
+                        <div class="enquire-content">
+                         <p>  <ul class="numbered-list">
+                                <li>1.Customized training to address specific challenges.</li>
+                              <li>2.Modules adapt to job market trends and employee levels</li>
+                                <li>3.Expertise in Soft Skills and Behavioral Skills development.</li>
+								
+								
+                                
+                            </ul></p> 
+                           
+                        
+                       
+                    </div>
+                    <!-- <button class="btn btn-primary enquire-button">Enquire Now</button> -->
+                </div>
+            </div>
+            <!-- Second Enquire Container -->
+            <!-- <div class="col-md-6">
+                <div class="enquire-container">
+                    <center><h2><strong>Brain Performance Coaching</strong></h2></center>
+                    <div class="enquire-content">
+                        <p>Brain performance coaching focuses on optimizing cognitive functions, such as memory, focus, and decision-making, to enhance productivity and mental clarity. It involves strategies to improve mental resilience, manage stress, and maximize brain health, helping individuals perform at their best both professionally and personally.Our brain is a massive and complex organ. Yet it can be rewired from past disempowering beliefs and reprogrammed for greater hights and performance. With this coaching we train our brain for massive productivity.</p>
+                       
+                    </div>
+                    <button class="btn btn-primary enquire-button">Enquire Now</button>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    </div>
+
+	<!-- Start Footer -->
+	<footer class="footer-area bg-f">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-9 col-md-6">
+					<h3>For Reservation</h3>
+					<p class="lead"><span style="color: #3498db;"> Visit Us: </span> NO.2, Gopi Garden (Behind Titan Watches), Hosur - 635 126, Tamil Nadu.</p>
+					<p class="lead"><a href="#"><span style="color: #3498db;"> Call Us: </span>+91 9786224994</a></p>
+					
+					<p class="lead"><a href="#"><span style="color: #3498db;">Mail Us: </span> lorsantraining@gmail.com</a></p>
+					
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<h3>Quick Links</h3>
+					<p><span class="text-color"><a href="index.html">Home</a></span></p>
+					<p><span class="text-color"><a href="aboutus.html">About Us</a></span></p>
+					<p><span class="text-color"><a href="corporatetraining.html">Services</a></span></p>
+					<p><span class="text-color"><a href="media.html">Media</a></span></p>
+					<p><span class="text-color"><a href="contactus.html">Contact Us</a></span></p>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<ul class="list-inline f-social">
+						<li class="list-inline-item"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div class="copyright">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<p class="company-name">
+							All Rights Reserved. &copy; <span id="currentYear"></span> 
+							<a href="#">Lorsan Training</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</footer>
+	<!-- End Footer -->
+	
+	<a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>
+
+	<!-- ALL JS FILES -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+	
+	<script src="js/jquery.superslides.min.js"></script>
+	<script src="js/images-loded.min.js"></script>
+	<script src="js/isotope.min.js"></script>
+	<script src="js/baguetteBox.min.js"></script>
+	<script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>
+    <script src="js/custom.js"></script>
+	<script>
+		document.getElementById("currentYear").textContent = new Date().getFullYear();
+	</script>
+</body>
+</html>

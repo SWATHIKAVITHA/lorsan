@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en"><!-- Basic -->
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+     <!-- Site Metas -->
+     <title>Lorsan Training</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">    
+	<!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css">    
+	<link rel="stylesheet" href="css/styles.css">    
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+	   <!-- div css -->
+	   <style>
+        /* Hover effects for the div */
+.custom-div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 12px 18px rgba(0, 0, 0, 0.2);
+    border-color: #e0af14;
+}
+
+.custom-div h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: #000;
+}
+
+.custom-div p {
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+    color: #555;
+}
+ul{
+    font-weight: 500;
+    text-align: center;
+}
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .custom-div {
+        flex: 1 1 calc(50% - 20px); /* Two items in a row */
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 576px) {
+    .custom-div {
+        flex: 1 1 calc(100% - 20px); /* One item in a row */
+        max-width: calc(100% - 20px);
+    }
+}
+
+
+     </style>
+
+<!-- /* div css ends */ -->
+	<style>
+		.numbered-list {
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Remove list padding */
+  margin: 0; /* Remove extra margins */
+  counter-reset: item; /* Initialize counter */
+}
+
+.numbered-list li {
+  display: flex; /* Align number and text on the same line */
+  align-items: flex-start; /* Vertically align number and text */
+  margin-bottom: 10px; /* Space between list items */
+  text-align: right; /* Align the text to the right */
+}
+
+.numbered-list li::before {
+  
+  display: inline-block; /* Treat number as a block for alignment */
+  width: 30px; /* Adjust width for proper alignment */
+  text-align: right; /* Right-align the numbers */
+  margin-right: 10px; /* Space between number and text */
+  color: #e0af14; /* Number color */
+  font-weight: bold; /* Bold the number for emphasis */
+}
+
+.numbered-list li p {
+  text-align: justify; /* Ensure the text is justified */
+  margin: 0; /* Remove extra margins from paragraphs */
+}
+
+@media (max-width: 768px) {
+  .numbered-list li {
+    flex-direction: column; /* Stack the numbers and text on top of each other on smaller screens */
+    align-items: flex-start; /* Align them to the left */
+    text-align: left; /* Align text to the left for mobile */
+  }
+
+  .numbered-list li::before {
+    margin-right: 0; /* Remove the margin on the right side */
+    margin-bottom: 5px; /* Add some space between the number and text */
+    width: auto; /* Let the number width adjust dynamically */
+    font-size: 18px; /* Slightly smaller font size for mobile */
+  }
+}
+
+		</style>
+</head>
+
+<body>
+	<!-- Start header -->
+	<header class="top-navbar">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container">
+				<a class="navbar-brand" href="index.html">
+					<img src="images/images/Lorsan Logo.png" alt="" style="height: 50px;"/>
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-rs-food" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbars-rs-food">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item "><a class="nav-link" href="index.html">HOME</a></li>
+						<li class="nav-item"><a class="nav-link" href="aboutus.html">ABOUT US</a></li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">SERVICES</a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="corporatetraining.html">CORPORATE TRAINING</a>
+								<a class="dropdown-item" href="personalcoaching.html">PERSONAL COACHING</a>
+								<!-- <div class="dropdown-submenu">
+									<ul>
+										<li><a class="dropdown-item" href="business-body-language.html">Business Body Language</a></li>
+										<li><a class="dropdown-item" href="brain-performance.html">Brain Performance Coaching</a></li>
+									</ul>
+								</div> -->
+								  
+								<a class="dropdown-item" href="geneticbrainprofiling.html">GENETIC BRAIN PROFILING</a>
+							</div>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="media.html">MEDIA</a></li>
+						<li class="nav-item"><a class="nav-link" href="contactus.html">CONTACT US</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- End header -->
+	<!-- <div class="about-section-box"> -->
+		<!-- <div class="container">
+			<div class="row">
+				<div class="container my-5">
+                    <h2 class="title">ABOUT US</h2><br><br>
+                    <div class="col-md-6">
+                        <div class="full float-right_img">
+                            <img src="images/images/aboutpage.avif" alt="#" />
+                        </div>
+                    </div> -->
+
+
+
+
+                    
+				<!-- </div>
+			</div>
+		</div>  -->
+	<!-- </div> -->
+    <!-- <div class="cover-slides1">
+		<img src="images/banner_img.png" alt="Banner Image">
+		<div class="overlay-content">
+			<h1>Welcome to Lorsan Training</h1>
+			<p>Empowering you with knowledge and skills for a better future</p>
+			<a href="#" class="btn">Learn More</a>
+		</div>
+	</div> -->
+	<br>
+	<br>
+	<!-- end slides -->
+
+	
+	 
+    <!-- End Banner -->
+
+	<!-- Start About -->
+	<div class="about-section-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<img style="border: 3px solid black;"src="images/genetic2.png" alt="" class="img-fluid">
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12 text-center">
+					<div class="inner-column">
+						<h1><strong>Genetic Brain Profiling</strong></h1>
+						<p>Genetic Brain Profiling is a scientifically proven method to understand one’s innate abilities, challenges. It throughs light on each person’s inborn abilities. After two years anyone can avail this opportunity to have a clear pathway for their education, career, business preference and recruit employees for their business.</p>
+					
+					</div>
+                    <!-- <button class="btn btn-primary enquire-button">Enquire Now</button> -->
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- end -->
+	 
+	<h1> <center><strong>School Training Packages</strong></center></h1>
+	
+	
+	<div class="container">
+		
+        <!-- First Div -->
+		
+        <!-- Second Div -->
+        <div class="custom-div">
+            <h2>Art of Learning Package (3 Hours)</h2>
+			<p>
+				<strong>Deals on:</strong>
+				<ul class="numbered-list">
+					<li>1. Different learning styles</li>
+					<li>2. Finding uniqueness in learners</li>
+					<li>3. Effective Vs Affective</li>
+					<li>4. Ideal Vs Idle</li>
+					<li>5. Friendly learning</li>
+					<li>6. Adolescent Management</li>
+				</ul>
+				<strong>Outcome of the Training:</strong> <br>
+				Brings attitudinal changes in teachers.
+			</p>
+        </div>
+        <!-- Third Div -->
+        <div class="custom-div">
+            <h2>Techie Teacher Package<br />(2 Days or 10 Hours)</h2>
+			<p>
+				<strong>Deals on:</strong>
+				<ul class="numbered-list">
+					<li>1. Techno teacher, Act with trendy activities</li>
+					<li>2. Find the sources, Locate the sources</li>
+					<li>3. Receive the sources, Reflect the sources</li>
+					<li>4. Aware of new techniques</li>
+				</ul>
+				<strong>Outcome of the Training:</strong> <br>Makes teachers technical-friendly to gather and utilize resources effectively.
+			</p>
+        </div>
+        <!-- Fourth Div -->
+        <div class="custom-div">
+            <h2>Transform T2F Package<br />(2 Days or 10 Hours)</h2>
+			<p>
+				<strong>Deals on:</strong>
+				<ul class="numbered-list">
+					
+					<li>1. Transformation from Teacher to Facilitator</li>
+					<li>2. How to be smart, Child-friendly approache</li>
+					<li>3. Body language / mannerism</li>
+					<li>4. Mastery over the subject, P4 techniques</li>
+					<li>5.Classroom management</li>
+					<li>6.Passionate Vs Eminent</li>
+				</ul>
+				<strong>Outcome of the Training:</strong> <br>Enables teachers to gain confidence and professionalism.
+			</p>
+        </div>
+        <!-- Fifth Div -->
+		<div class="custom-div">
+            <h2>E’s Package (5 Hours)</h2>
+            <p>
+                <strong>Deals on:</strong>
+                <ul>
+                    <p>
+					
+						<ul class="numbered-list">
+							<li>1.Personal and Professional traits of a teacher</li>
+							<li>2.Ethics and levels for a teacher</li>
+							<li>3.A to Z roles of a teacher, Teaching is a skill</li>
+							<li>4.Core teaching,Specific teaching,Target group teaching skills</li>
+							<li>5.Innovative teaching practices</li>
+						</ul>
+						<strong>Outcome of the Training:</strong><br> Enables teachers to be skillful with innovative practices.
+					</p>
+                </ul>
+               
+            </p>
+        </div>
+        <div class="custom-div">
+            <h2>Effective Evaluation Package<br />(2 Days or 10 Hours)</h2>
+			<p><strong>Deals on:</strong>
+				<ul class="numbered-list">
+					
+					<li>1. Orientation about CCE</li>
+					<li>2. Innovative Approaches / techniques of CCE</li>
+					<li>3. Practices of CCE, Documenting in CCE</li>
+					<li>4. Reporting in CCE</li>
+				</ul>
+				<strong>Outcome of the Training:</strong><br> Enables teachers to be effective in assessment techniques.
+			</p>
+        </div>
+        <!-- Sixth Div -->
+        <div class="custom-div">
+            <h2>Development<br />(10:20:70 Method)</h2>
+			<p>
+			<strong>Includes:</strong>
+			<ul class="numbered-list">
+				<li>1. Formal</li>
+				<li>2. Social</li>
+				<li>3. Experiential</li>
+			</ul>
+		</p>
+        </div>
+		<div class="custom-div">
+            <h2>Our Model Assessment</h2>
+			<p>
+				<strong>Levels of Assessment:</strong>
+				<ul class="numbered-list">
+					<li>1. Organizational</li>
+					<li>2. Team</li>
+					<li>3. Individual</li>
+				</ul>
+			</p>
+        </div>
+    </div>
+	
+
+	<!-- ends -->
+	<!-- Start Footer -->
+	<footer class="footer-area bg-f">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-9 col-md-6">
+					<h3>For Reservation</h3>
+					<p class="lead"><span style="color: #3498db;"> Visit Us: </span> NO.2, Gopi Garden (Behind Titan Watches), Hosur - 635 126, Tamil Nadu.</p>
+					<p class="lead"><a href="#"><span style="color: #3498db;"> Call Us: </span>+91 9786224994</a></p>
+					
+					<p class="lead"><a href="#"><span style="color: #3498db;">Mail Us: </span> lorsantraining@gmail.com</a></p>
+					
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<h3>Quick Links</h3>
+					<p><span class="text-color"><a href="index.html">Home</a></span></p>
+					<p><span class="text-color"><a href="aboutus.html">About Us</a></span></p>
+					<p><span class="text-color"><a href="corporatetraining.html">Services</a></span></p>
+					<p><span class="text-color"><a href="media.html">Media</a></span></p>
+					<p><span class="text-color"><a href="contactus.html">Contact Us</a></span></p>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<ul class="list-inline f-social">
+						<li class="list-inline-item"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div class="copyright">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<p class="company-name">
+							All Rights Reserved. &copy; <span id="currentYear"></span> 
+							<a href="#">Lorsan Training</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</footer>
+	<!-- End Footer -->
+	
+	<a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>
+
+	<!-- ALL JS FILES -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+	
+	<script src="js/jquery.superslides.min.js"></script>
+	<script src="js/images-loded.min.js"></script>
+	<script src="js/isotope.min.js"></script>
+	<script src="js/baguetteBox.min.js"></script>
+	<script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>
+    <script src="js/custom.js"></script>
+	<script>
+		document.getElementById("currentYear").textContent = new Date().getFullYear();
+	</script>
+</body>
+</html>
+
