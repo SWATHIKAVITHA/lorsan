@@ -21,7 +21,7 @@
 body {
     color: #666666;
     font-size: 15px;
-    font-family: 'Athiti', sans-serif;
+    font-family: 'Times New Roman', sans-serif;
     line-height: 1.80857;
 }
 
@@ -597,7 +597,7 @@ button:focus{
 }
 
 .cover-slides h1{
-	font-family: 'Arbutus Slab', serif;
+	font-family: 'Times New Roman', serif;
 	font-weight: 500;
 	font-size: 64px;
 	color: #fff;
@@ -626,7 +626,7 @@ button:focus{
 } */
 .inner-column{}
 .inner-column h1{
-	font-family: 'Arbutus Slab', serif;
+	font-family: 'Times New Roman', serif;
 	font-size: 30px;
 	color: #010101;
 }
@@ -665,7 +665,7 @@ button:focus{
     font-weight: 300;
     line-height: 44px;
     color: #fff;
-	font-family: 'Arbutus Slab', serif;
+	font-family: 'Times New Roman', serif;
 	margin-bottom: 20px;
 }
 
@@ -689,7 +689,7 @@ button:focus{
 .heading-title h2{
 	color: #010101;
 	font-size: 28px;
-	font-family: 'Arbutus Slab', serif;
+	font-family: 'Times New Roman', serif;
 }
 .heading-title p{
 	font-size: 18px;
@@ -749,7 +749,7 @@ button:focus{
 	color: #ffffff;
 	font-size: 24px;
 	font-weight: 500;
-	font-family: 'Arbutus Slab', serif;
+	font-family: 'Times New Roman', serif;
 }
 .why-text p{
 	color: #ffffff;
@@ -1146,7 +1146,7 @@ button:focus{
 .all-page-title h1{
 	font-size: 38px;
 	color: #ffffff;
-	font-family: 'Arbutus Slab', serif;
+	font-family: 'Times New Roman', serif;
 	padding: 0px;
 }
 
