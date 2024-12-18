@@ -293,9 +293,9 @@ p {
       margin-bottom: 20px;
   }
 }
-</style>
-<!-- corporate training css starts -->
-<style>
+
+/* <!-- corporate training css starts --> */
+
 /* General Reset */
 * {
   margin: 0;
@@ -303,12 +303,12 @@ p {
   box-sizing: border-box;
 }
 
-/* body {
-  font-family: 'Arial', sans-serif;
-  background: #f7f9fc;
-  color: #333;
+body {
+  font-family: 'Times New Roman';
+  /* background: #f7f9fc;
+  color: #333; */
   padding: 20px;
-} */
+}
 
 h1 {
   text-align: center;
@@ -395,9 +395,9 @@ h1 {
       font-size: 0.85rem;
   }
 }
-</style> 
-<!-- corporate training css ends -->
-<style>
+
+/* <!-- corporate training css ends --> */
+
 .cover-slides1 {
 position: relative;
 height: 100vh; /* Full-screen height */
