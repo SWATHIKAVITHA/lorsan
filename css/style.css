@@ -4,6 +4,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Arbutus+Slab');
 @import url('https://fonts.googleapis.com/css?family=Athiti:400,500,600');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
 /*------------------------------------------------------------------
     IMPORT FILES
@@ -21,7 +22,7 @@
 body {
     color: #666666;
     font-size: 15px;
-    font-family: 'Times New Roman';
+    font-family: 'Times New Roman', Times, serif;
     line-height: 1.80857;
 }
 
@@ -597,7 +598,7 @@ button:focus{
 }
 
 .cover-slides h1{
-	font-family: 'Times New Roman', serif;
+    font-family: 'Times New Roman', Times, serif;
 	font-weight: 500;
 	font-size: 64px;
 	color: #fff;
@@ -626,7 +627,7 @@ button:focus{
 } */
 .inner-column{}
 .inner-column h1{
-	font-family: 'Times New Roman', serif;
+    font-family: 'Times New Roman', Times, serif;
 	font-size: 30px;
 	color: #010101;
 }
